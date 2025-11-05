@@ -8,12 +8,23 @@ Contoh hasil pengujian konektivitas jaringan ditunjukkan di bawah ini:
 ### 🔻 Ping Gagal
 ![Ping PC-A to PC-B gagal](images/pingfailed.png)
 
+Masalah utama adalah konfigurasi Layer 3 (Network Layer) yang belum selesai, yaitu :
+
+Tujuan Ping (192.168.0.3) di Subnet Lain: PC0 sadar bahwa tujuan berada di luar jaringannya, sehingga paket harus dikirim ke Default Gateway (interface router).
+
+Router Belum Siap: Karena interface router (default gateways) belum dikonfigurasi, router tidak memiliki alamat IP yang valid atau tidak tahu cara merutekan lalu lintas.
+
+Layer 3 Gagal: Tanpa konfigurasi default gateway yang benar, paket dari PC0 akan gagal mencapai router atau gagal dirutekan oleh router ke subnet tujuan. Ini menyebabkan paket ICMP "timeout" dan menghasilkan 100% loss.
+
+---
+
 ### ✅ Ping Berhasil
 ![Ping PC-A to PC-B berhasil](images/pingsuccess.png)
+Ping berhasil (3 paket diterima) karena router kini sudah dikonfigurasi dengan benar (Layer 3), sehingga lalu lintas bisa dirutekan melintasi dua subnet.
 
 ### ✅ Ping Berhasil
 ![Ping Switch to PC-B berhasil](images/switchsuccess.png)
-
+Ping berhasil dari S1 ke PC-B karena router telah dikonfigurasi dengan benar untuk merutekan lalu lintas Layer 3 antar subnet, dan Switch S1 memiliki Default Gateway yang dikonfigurasi untuk mengirim paket ke luar jaringannya.
 ---
 
 ## ⚙️ Fungsi Perintah Penting
