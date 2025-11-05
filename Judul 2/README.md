@@ -1,3 +1,3 @@
-#Tugas Akhir Judul 2 **Praktikum Jaringan Komputer**
+# Tugas Akhir Judul 2 **Praktikum Jaringan Komputer**
 
-##Link YouTube : [Klik di sini](https://youtu.be/EJFljABo2s8)
+## Link YouTube : [Klik di sini](https://youtu.be/EJFljABo2s8)
