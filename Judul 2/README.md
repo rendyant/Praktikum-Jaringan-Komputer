@@ -20,10 +20,12 @@ Layer 3 Gagal: Tanpa konfigurasi default gateway yang benar, paket dari PC0 akan
 
 ### ✅ Ping Berhasil
 ![Ping PC-A to PC-B berhasil](images/pingsuccess.png)
+
 Ping berhasil (3 paket diterima) karena router kini sudah dikonfigurasi dengan benar (Layer 3), sehingga lalu lintas bisa dirutekan melintasi dua subnet.
 
 ### ✅ Ping Berhasil
 ![Ping Switch to PC-B berhasil](images/switchsuccess.png)
+
 Ping berhasil dari S1 ke PC-B karena router telah dikonfigurasi dengan benar untuk merutekan lalu lintas Layer 3 antar subnet, dan Switch S1 memiliki Default Gateway yang dikonfigurasi untuk mengirim paket ke luar jaringannya.
 ---
 
