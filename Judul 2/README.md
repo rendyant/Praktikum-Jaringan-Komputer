@@ -2,7 +2,17 @@
 
 # 🧩 Build a Switch and Router Network
 
-Proyek ini berisi latihan konfigurasi jaringan dasar menggunakan router dan switch untuk membangun konektivitas antar perangkat.
+Proyek ini berisi latihan konfigurasi jaringan dasar menggunakan router dan switch untuk membangun konektivitas antar perangkat.  
+Contoh hasil pengujian konektivitas jaringan ditunjukkan di bawah ini:
+
+### 🔻 Ping Gagal
+![Ping PC-A to PC-B gagal](images/pingfailed.png)
+
+### ✅ Ping Berhasil
+![Ping PC-A to PC-B berhasil](images/pingsuccess.png)
+
+### ✅ Ping Berhasil
+![Ping Switch to PC-B berhasil](images/switchsuccess.png)
 
 ---
 
@@ -51,5 +61,4 @@ Proyek ini berisi latihan konfigurasi jaringan dasar menggunakan router dan swit
 ---
 
 ## 📘 Catatan
-README ini merangkum fungsi utama perintah konfigurasi jaringan pada lab *Build a Switch and Router Network* tanpa mencantumkan alamat IP atau detail spesifik konfigurasi.
-
+README ini merangkum fungsi utama perintah konfigurasi jaringan pada lab *Build a Switch and Router Network* tanpa mencantumkan alamat IP atau detail konfigurasi teknis.
